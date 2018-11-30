@@ -7,5 +7,7 @@ function getJoke() {
 }
 
 function showJoke() {
-  console.log(this.responseText);
+  const joke = JSON.parse(this.responseText);
+
+  document.getElementById("dadJoke").innerHTML = joke["joke"];
 }
