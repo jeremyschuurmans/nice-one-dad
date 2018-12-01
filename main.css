@@ -76,3 +76,10 @@
       font-size: 1vw;
       font-family: 'Sawarabi Gothic', sans-serif;
     }
+    footer a {
+      text-decoration: none;
+      color: black;
+    }
+    footer a:hover {
+      color: #f44336;
+    }
