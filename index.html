@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+
   <style>
     html {
       height: 90%;
@@ -34,51 +37,6 @@
     .container {
       /* background-color: green; */
     }
-
-    .bubble {
-    background-color: white;
-    -webkit-border-radius:7px;
-    -moz-border-radius:7px;
-    border-radius: 7px;
-    border: 2px solid #f44336;
-    -webkit-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
-    -moz-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
-    -ms-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
-    -o-filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
-    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.5), 4px 4px 0 hsla(0,0%,0%,.2);
-    color: #333;
-    font-family: Ubuntu, sans-serif;
-    font: 16px/25px;
-    padding: 15px 25px;
-    position: absolute;
-    right: 20%;
-    top: 0;
-    width: 25%;
-    /* height: 10%; */
-}
-
-
-.bubble:after, .bubble:before {
-    border-bottom: 25px solid transparent;
-    border-left: 25px solid #fff;
-    bottom: -25px;
-    content: '';
-    position: absolute;
-    left: 25px;
-}
-.bubble:before {
-    border-left: 25px solid hsla(0,0%,0%,.1);
-    bottom: -28px;
-    left: 22px;
-    z-index: 1;
-}
-.bubble:before {
-    border-left: 27px solid #DD4814;
-    border-bottom: 27px solid transparent;
-    bottom: -29px;
-    left: 23px;
-    z-index: 0;
-}
 
 button {
   background-color: white;
@@ -113,31 +71,25 @@ button:hover {
   width: 50%;
   padding: 10px;
 }
-.joking-dad {
-  position: relative;
+#dadJoke {
+  text-align: center;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-style: italic;
+  font-size: 25px;;
 }
-
-/* --- iPhone 6, 6s, 7, and 8 --- */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
-  .bubble {
-    visibility: hidden;
-    right: 0;
-  }
-  #dadJoke {
-    visibility: visible;
-    text-align: center;
-    color: #f44336;
-    font-weight: bold;
-  }
+header {
+  text-align: center;
+  font-family: 'Marcellus SC', serif;
 }
-
-/* @media only screen and (min-device-width: 1200px) {
-  .bubble {
-    right: 20%;
-  }
-} */
-
+q {
+  quotes: """ """;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
 
 
 
@@ -148,24 +100,26 @@ button:hover {
 </head>
 <div class="container">
 <body>
-  <h1 class="center">Nice One, Dad</h1>
+  <header>
+  <h1>Nice One, Dad</h1>
+</header>
   <main>
     <div class="row">
       <div class="column center">
       <div class="joking-dad">
-      <img src=dad.png>
-      <!-- </div> -->
-      <!-- <div class="column" -->
-      <div id="jokeLink">
-        <button class="center" onclick="getJoke()">Get Joke</button>
-      </div>
-      <div class="bubble">
+        <img src=dad-telling-joke.png>
+        <br></br>
         <div id="dadJoke"></div>
+      </div>
+      <br></br>
+      <div id="jokeLink">
+        <button class="center" onclick="getJoke()">Tell me a joke!</button>
       </div>
       </div>
         </div>
     </main>
     <footer>
+
     </footer>
   <script src="index.js"></script>
 </body>
