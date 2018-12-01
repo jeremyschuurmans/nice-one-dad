@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Goudy+Bookletter+1911|Sawarabi+Gothic" rel="stylesheet">
 
   <style>
     html {
@@ -27,12 +26,14 @@
     } */
     img {
       /* background-color: #f1f1f1; */
+      width: 80%;
       max-width: 100%;
       height: auto;
+
     }
     h1 {
       /* background-color: #f1f1f1; */
-      font-size: 5vw;
+      font-size: 2vw;
     }
     .container {
       /* background-color: green; */
@@ -44,7 +45,8 @@ button {
   border: 2px solid #f44336;
   border-radius: 7px;
   padding: 14px 40px;
-  font-size: 25px;
+  font-size: 2vw;
+  font-family: 'Sawarabi Gothic', sans-serif;
   transition-duration: 0.4s;
   position: absolute;
 }
@@ -75,11 +77,12 @@ button:hover {
   text-align: center;
   font-family: 'Goudy Bookletter 1911', serif;
   font-style: italic;
-  font-size: 25px;;
+  font-size: 2vw;
 }
 header {
   text-align: center;
-  font-family: 'Marcellus SC', serif;
+  font-family: 'Rock Salt', cursive;
+
 }
 q {
   quotes: """ """;
@@ -90,6 +93,19 @@ q:before {
 q:after {
   content: close-quote;
 }
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1vw;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+.bottom-container {
+  height: 300px;
+}
+
 
 
 
@@ -100,7 +116,7 @@ q:after {
 </head>
 <div class="container">
 <body>
-  <header>
+<header>
   <h1>Nice One, Dad</h1>
 </header>
   <main>
@@ -116,11 +132,12 @@ q:after {
         <button class="center" onclick="getJoke()">Tell me a joke!</button>
       </div>
       </div>
-        </div>
     </main>
+    <div class="bottom-container"></div>
     <footer>
-
+      <p>MADE WITH &hearts; BY<strong>JEREMY SCHUURMANS</strong></p>
     </footer>
+  </div>
   <script src="index.js"></script>
 </body>
 </div>
