@@ -6,113 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Goudy+Bookletter+1911|Sawarabi+Gothic" rel="stylesheet">
-
-  <style>
-    html {
-      height: 90%;
-    }
-    body {
-      position: relative;
-      min-height: 100%;
-    }
-
-    /* main {
-      display: inline-block;
-      margin: 15px 0 2em 85px;
-      font-style: italic;
-      position: relative;
-      top: 100px;
-      left: 500px;
-    } */
-    img {
-      /* background-color: #f1f1f1; */
-      width: 80%;
-      max-width: 100%;
-      height: auto;
-
-    }
-    h1 {
-      /* background-color: #f1f1f1; */
-      font-size: 2vw;
-    }
-    .container {
-      /* background-color: green; */
-    }
-
-button {
-  background-color: white;
-  color: black;
-  border: 2px solid #f44336;
-  border-radius: 7px;
-  padding: 14px 40px;
-  font-size: 2vw;
-  font-family: 'Sawarabi Gothic', sans-serif;
-  transition-duration: 0.4s;
-  position: absolute;
-}
-button:hover {
-  background-color: red;
-  color: white;
-}
-.row {
-  /* background-color: pink; */
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  /* background-color: blue; */
-  /* float: left; */
-  width: 100%;
-
-}
-.center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-#dadJoke {
-  text-align: center;
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-style: italic;
-  font-size: 2vw;
-}
-header {
-  text-align: center;
-  font-family: 'Rock Salt', cursive;
-
-}
-q {
-  quotes: """ """;
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
-}
-footer {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  font-size: 1vw;
-  font-family: 'Sawarabi Gothic', sans-serif;
-}
-.bottom-container {
-  height: 300px;
-}
-
-
-
-
-
-
-
-  </style>
 </head>
 <div class="container">
 <body>
@@ -122,23 +15,25 @@ footer {
   <main>
     <div class="row">
       <div class="column center">
-      <div class="joking-dad">
-        <img src=dad-telling-joke.png>
+        <div class="joking-dad">
+          <img src=dad-telling-joke.png>
+          <br></br>
+          <br></br>
+          <div id="dadJoke"></div>
+          <br></br>
+        </div>
         <br></br>
-        <div id="dadJoke"></div>
-      </div>
-      <br></br>
-      <div id="jokeLink">
-        <button class="center" onclick="getJoke()">Tell me a joke!</button>
-      </div>
+        <div id="jokeLink">
+          <button class="center" onclick="getJoke()">Tell me a joke!</button>
+        </div>
       </div>
     </main>
     <div class="bottom-container"></div>
     <footer>
       <p>MADE WITH &hearts; BY<strong>JEREMY SCHUURMANS</strong></p>
     </footer>
+    </div>
+    <script src="index.js"></script>
+    </body>
   </div>
-  <script src="index.js"></script>
-</body>
-</div>
 </html>
