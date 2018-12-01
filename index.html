@@ -6,11 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
   <style>
+    html {
+      height: 90%;
+    }
+    body {
+      position: relative;
+      min-height: 100%;
+    }
+
+    main {
+      display: inline-block;
+      margin: 15px 0 2em 85px;
+      font-style: italic;
+      position: relative;
+      top: 100px;
+      left: 500px;
+    }
+
     img {
       /* padding-top: 50%; */
-      width: 50;
+      width: 85%;
+      /* max-width: 100%; */
       /* height: auto; */
     }
+
     .bubble {
     background-color: #fff;
     -webkit-border-radius:7px;
@@ -28,18 +47,10 @@
     padding: 15px 25px;
     position: absolute;
     right: 0;
-    top: -120px;
+    top: -70px;
     width: 260px;
 }
 
-main {
-    display: inline-block;
-    margin:15px 0 2em 85px;
-    font-style:italic;
-    position: relative;
-    top: 200px;
-    left: 200px;
-}
 
 .bubble:after, .bubble:before {
     border-bottom: 25px solid transparent;
@@ -62,6 +73,26 @@ main {
     left: 23px;
     z-index: 0;
 }
+button {
+  background-color: #fff;
+  color: black;
+  border: 2 px solid red;
+  border-radius: 7px;
+  padding: 14px 40px;
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
 
   </style>
 </head>
@@ -71,10 +102,12 @@ main {
         <div class="bubble" placeholder="Hey, have you heard this one?">
           <div id="dadJoke"></div>
         </div>
-      <div id="jokeLink">
-        <a href="#" onclick="getJoke()">Get Joke</a>
-      </div>
+        <div id="jokeLink">
+          <button><a href="#" onclick="getJoke()">Get Joke</a></button>
+        </div>
     </main>
+    <footer>
+    </footer>
   <script src="index.js"></script>
 </body>
 </html>
