@@ -9,7 +9,7 @@
       min-height: 100%;
     }
     .column {
-      width: 50%;
+      width: 100%;
     }
     .center {
       margin: auto;
@@ -83,4 +83,34 @@
     }
     footer a:hover {
       color: #f44336;
+    }
+
+    /* ----------- Pixel2, Pixel2 XL, iPhone 6/7/8 and 6/7/8 Plus, IPhone X  ----------- */
+
+    @media only screen
+      and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+
+         header {
+           height: 125px;
+         }
+         h1 {
+           font-size: 1em;
+         }
+  	     .jokingDad {
+  		      min-height: 50px;
+  	     }
+         #dadJoke  {
+  		      font-size: 2em;
+  	     }
+         button {
+  		      height: 75px;
+  		      font-size: 1em;
+  	     }
+         footer {
+  		      bottom: -1px;
+            font-size: 1em;
+  	     }
+
     }
