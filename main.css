@@ -23,14 +23,15 @@
       font-size: 2vw;
     }
     header {
-      text-align: center;
+      text-align: left;
       font-family: 'Rock Salt', cursive;
+      height: 150px;
+      padding-left: 25px;
     }
 
     /* DAD IMAGE STYLES */
 
     img {
-      width: 80%;
       max-width: 100%;
       height: auto;
     }
