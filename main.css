@@ -4,10 +4,12 @@
     html {
       height: 90%;
     }
+
     body {
       position: relative;
       min-height: 100%;
     }
+
     .center {
       margin: auto;
       width: 50%;
@@ -19,6 +21,7 @@
     h1 {
       font-size: 2vw;
     }
+
     header {
       text-align: center;
       font-family: 'Rock Salt', cursive;
@@ -49,6 +52,7 @@
       transition-duration: 0.4s;
       position: absolute;
     }
+
     button:hover {
       background-color: red;
       color: white;
@@ -68,6 +72,7 @@
     .bottom-container {
       height: 300px;
     }
+
     footer {
       width: 100%;
       position: absolute;
@@ -77,10 +82,12 @@
       font-size: 1vw;
       font-family: 'Sawarabi Gothic', sans-serif;
     }
+
     footer a {
       text-decoration: none;
       color: black;
     }
+    
     footer a:hover {
       color: #f44336;
     }
@@ -88,22 +95,27 @@
     /* ----------- Pixel2, Pixel2 XL, iPhone 6/7/8 and 6/7/8 Plus, IPhone X  ----------- */
 
     @media only screen
-      and (min-device-width: 375px)
-      and (max-device-width: 667px)
+      and (min-device-width: 320px)
+      and (max-device-width: 1024px)
       and (-webkit-min-device-pixel-ratio: 2) {
 
          header {
            height: 125px;
          }
+
          h1 {
            font-size: 1em;
          }
-  	     .jokingDad {
-  		      min-height: 50px;
-  	     }
+
+         img {
+           max-width: 100%;
+           height: auto;
+         }
+
          #dadJoke  {
   		      font-size: 2em;
   	     }
+
          button {
   		      height: 75px;
   		      font-size: 1em;
